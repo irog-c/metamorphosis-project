@@ -17,7 +17,7 @@ static constexpr std::size_t right_shoulder_idx = 12;
 static constexpr std::size_t left_hip_idx = 18;
 static constexpr std::size_t right_hip_idx = 22;
 
-auto get_joints(const std::string& file_name) -> std::vector<pcl::PointXYZ>
+static auto get_joints(const std::string& file_name) -> std::vector<pcl::PointXYZ>
 {
 	auto joints = std::vector<pcl::PointXYZ>();
 	auto json_fs = std::ifstream(file_name);
