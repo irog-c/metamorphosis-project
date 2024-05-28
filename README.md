@@ -1,5 +1,38 @@
+# <div align="center"> Jotter CLI </div>
+
+```Task project for Metamorphosis```
+
+## Build instructions
 install PCL
 sudo apt install libpcl-dev
-Remember to run git submodule update --init --recursive after cloning the repository to ensure the
-resources:
-    https://learn.microsoft.com/en-us/azure/kinect-dk/body-joints
+Remember to run after cloning the repository to ensure the
+
+First you will need to set up all the dependencies:
+Install PCL:
+```bash
+sudo apt install libpcl-dev
+```
+
+Get all the git submodules (this is for the nlohmann json library)
+```bash
+git submodule update --init --recursive 
+```bash
+
+Once you're done it is time to build the project using CMake:
+Run the following commands from the root folder:
+```bash
+cmake -S . -B build
+cmake --build build
+```
+
+This should build the project, and the executable can be found in:
+```bash
+./build/metamorphosis-project
+```
+
+## Usage
+
+```bash
+./build/metamorphosis-project resources/back_closeup_body_realigned.ply resources/back_closeup_body_realigned.json
+```
+
