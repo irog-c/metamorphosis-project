@@ -3,7 +3,8 @@
 ```Task project for Metamorphosis```
 
 ## Build instructions
-First you will need to set up all the dependencies:
+### First you will need to set up all the dependencies:
+
 Install PCL:
 ```bash
 sudo apt install libpcl-dev
@@ -14,7 +15,7 @@ Get all the git submodules (this is for the nlohmann json library)
 git submodule update --init --recursive 
 ```
 
-Once you're done it is time to build the project using CMake:
+### Once you're done it is time to build the project using CMake:
 Run the following commands from the root folder:
 ```bash
 cmake -S . -B build
