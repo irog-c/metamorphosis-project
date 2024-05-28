@@ -16,7 +16,7 @@ sudo apt install libpcl-dev
 Get all the git submodules (this is for the nlohmann json library)
 ```bash
 git submodule update --init --recursive 
-```bash
+```
 
 Once you're done it is time to build the project using CMake:
 Run the following commands from the root folder:
