@@ -3,10 +3,6 @@
 ```Task project for Metamorphosis```
 
 ## Build instructions
-install PCL
-sudo apt install libpcl-dev
-Remember to run after cloning the repository to ensure the
-
 First you will need to set up all the dependencies:
 Install PCL:
 ```bash
